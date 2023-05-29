@@ -25,7 +25,7 @@
 struct fmt
 {
 	char fmt;
-	int (*fn)(va_list, char[], int, int, int);
+	int (*fn)(va_list, char[], int, int, int, int);
 };
 
 /**
@@ -44,7 +44,7 @@ int handle_print(const char *fmt, int *i, va_list list, char buffer[], int flags
 int print_char(va_list types, char buffer[], int flags, int width, int precision, int size);
 int print_string(va_list types, char buffer[], int flags, int width, int precision, int size);
 int print_percent(va_list types, char buffer[], int flags, int width, int precision, int size);
-int _putchar(char ch);
+int _putchar(char c);
 int (*driver(const char *format))(const char *format, va_list);
 int printint(char *format, va_list pa);
 
