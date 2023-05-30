@@ -3,7 +3,7 @@
 /**
  * get_flags - once _printf detects a flag modifier, get_flags
  * turns on flags
- * @format: A pointer to the struct flags string that is used to print arguments
+ * @format: pointer to the struct flags string that is used to print arguments
  * @i: a parameter
  * Return: 1 if a fkag is activated if not 0
  */
